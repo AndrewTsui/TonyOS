@@ -2,12 +2,8 @@
  * =====================================================================================
  *
  *       Filename:  types.h
- *
  *       Revision:  none
  *       Compiler:  gcc
- *
- *       Author:  Hurley (LiuHuan), liuhuan1992@gmail.com
- *       Company:  Class 1107 of Computer Science and Technology
  *
  * =====================================================================================
  */
