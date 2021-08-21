@@ -36,16 +36,16 @@ all: $(S_OBJECTS) $(C_OBJECTS) link update_image
 
 link:
 	@echo link kernel file...
-	$(LD) $(LD_FLAGS) $(S_OBJECTS) $(C_OBJECTS) -o hx_kernel
+	$(LD) $(LD_FLAGS) $(S_OBJECTS) $(C_OBJECTS) -o TonyOS_kernel
 
 .PHONY:clean
 clean:
-	$(RM) $(S_OBJECTS) $(C_OBJECTS) hx_kernel
+	$(RM) $(S_OBJECTS) $(C_OBJECTS) TonyOS_kernel
 
 .PHONY:update_image
 update_image:
 	sudo mount floppy.img /mnt/kernel
-	sudo cp hx_kernel /mnt/kernel/hx_kernel
+	sudo cp TonyOS_kernel /mnt/kernel/TonyOS_kernel
 	sleep 1
 	sudo umount /mnt/kernel
 
